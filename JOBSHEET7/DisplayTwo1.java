@@ -1,5 +1,3 @@
-package JOBSHEET7;
-
 
 import java.util.Scanner;
 
@@ -13,7 +11,6 @@ numInput = input.nextInt();
 for (int i = 1; i <= numInput; i++) {
     if (i % 2 == 0) {
         System.out.println("2 multiple: "+1);
-
     }
     
 }
