@@ -13,10 +13,11 @@ public class Cinema1 {
         audience [3][1] = "Hana";
 
         System.out.println(audience.length);
-        System.out.println(audience[0].length);
-        System.out.println(audience[1].length);
-        System.out.println(audience[2].length);
-        System.out.println(audience[3].length);
+        for (int i = 0; i < audience.length; i++) {
+            System.out.println("Length of row " + (i + 1) + ": " + audience[i].length);
+
+            
+        }
 
 System.out.printf("%s\t %s\n", audience[0][0], audience[0][1]);
 System.out.printf("%s\t %s\n", audience[1][0], audience[1][1]);
@@ -37,5 +38,7 @@ DONE
 4. Explain the function of audience.length and audience[0].length! 
 Do audience[0].length, audience[1].length, audience[2].length, and 
 audience[3].length have the same value? Why? 
+5. Modify the program code in step 4 to display the length of each row in the array using a for loop. Compile, run, then commit
+DONE
 
- */
+*/
