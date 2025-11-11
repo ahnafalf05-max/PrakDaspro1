@@ -12,9 +12,9 @@ public class Cinema1 {
         audience [3][0] = "Gisel";
         audience [3][1] = "Hana";
 
-        System.out.println(audience.length);
-        for (String[] rowAudience : audience) {
-            System.out.println("Length of row: " + rowAudience.length);
+        System.out.println("Audiences in the row 3:");
+        for (int i = 0; i < audience[2].length; i++) {
+            System.out.println("audience[2][i]");
 
             
         }
@@ -48,6 +48,9 @@ Use foreach loop when you just want to see or use items. Use for loop when you n
 means it has 4 rows and 2 columns.
 9.	What is the max column index for the audience array? 
 It has 4 rows and 2 columns per row
+10.	Add program code to display the audience’s name on the 3rd line using a for loop. 
+Compile, run, then commit.
+DONE 
 
 
 */
