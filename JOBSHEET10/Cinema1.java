@@ -34,5 +34,8 @@ No, they don’t have to be
 It doesn’t fill the array with actual names.
 3. Complete the audience list in step 4 so that it looks like the following program code
 DONE
+4. Explain the function of audience.length and audience[0].length! 
+Do audience[0].length, audience[1].length, audience[2].length, and 
+audience[3].length have the same value? Why? 
 
  */
