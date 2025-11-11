@@ -40,8 +40,7 @@ public class Numbers1 {
 DONE
 2.	What is the function of Arrays.toString()? 
 used to convert an array into a readable string format.
-3.	3.	What is the default value for elements in an array with the data type int? 
-4.	Add the following program code: 
+3. What is the default value for elements in an array with the data type int? 
 an array of int  without initializing its elements, each element is automatically set to the default value
 4.	Add the following program code: 
 DONE
