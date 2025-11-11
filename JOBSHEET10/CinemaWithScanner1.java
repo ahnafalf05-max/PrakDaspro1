@@ -19,23 +19,30 @@ public class CinemaWithScanner1 {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Enter name: ");
-                    String name = sc.nextLine();
+                    
+    System.out.print("Enter name: ");
+    String name = sc.nextLine();
 
-                    System.out.print("Enter row number (1-4): ");
-                    int row = sc.nextInt();
+    System.out.print("Enter row number (1-4): ");
+    int row = sc.nextInt();
 
-                    System.out.print("Enter column number (1-2): ");
-                    int column = sc.nextInt();
-                    sc.nextLine(); // Clear buffer
+    System.out.print("Enter column number (1-2): ");
+    int column = sc.nextInt();
+    sc.nextLine(); // Clear buffer
 
-                    if (row >= 1 && row <= 4 && column >= 1 && column <= 2) {
-                        audience[row - 1][column - 1] = name;
-                        System.out.println("Audience added successfully.");
-                    } else {
-                        System.out.println("Invalid seat position. Please try again.");
-                    }
-                    break;
+    
+    if (row >= 1 && row <= 4 && column >= 1 && column <= 2) {
+        
+        if (audience[row - 1][column - 1] == null) {
+            audience[row - 1][column - 1] = name;
+            System.out.println("Audience added successfully.");
+        } else {
+            System.out.println("Seat already taken. Please choose another seat.");
+        }
+    } else {
+        System.out.println("Invalid seat position. Row must be 1–4 and column must be 1–2.");
+    }
+    break;
 
                 case 2:
                     System.out.println("\n=== AUDIENCE LIST ===");
@@ -70,7 +77,7 @@ Not necessarily. In my program, the array elements are not filled sequentially f
 -	Menu 3: Exit 
 DONE
 3. Modify the program code to handle if the seat row/column number is not available 
-
+DONE
 
 
  */
