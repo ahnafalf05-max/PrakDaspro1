@@ -50,15 +50,16 @@ public class CinemaWithScanner1 {
     
 
                 case 2:
-                    System.out.println("\n=== AUDIENCE LIST ===");
-                    for (int i = 0; i < audience.length; i++) {
-                        for (int j = 0; j < audience[i].length; j++) {
-                            String occupant = audience[i][j];
-                            System.out.println("Row " + (i + 1) + ", Column " + (j + 1) + ": " +
-                                    (occupant != null ? occupant : "[Empty]"));
-                        }
-                    }
-                    break;
+                    
+    System.out.println("\n=== AUDIENCE LIST ===");
+    for (int i = 0; i < audience.length; i++) {
+        for (int j = 0; j < audience[i].length; j++) {
+            String occupant = audience[i][j];
+            System.out.println("Row " + (i + 1) + ", Column " + (j + 1) + ": " +
+                (occupant != null ? occupant : "***"));
+        }
+    }
+    break;
 
                 case 3:
                     System.out.println("Exiting program. Goodbye!");
@@ -85,5 +86,11 @@ DONE
 DONE
 4. In menu 1, modify the program code to give a warning if the selected seat is already occupied by other audiences, then display a command to enter rows and columns again 
 DONE
+5.	In menu 2, if the seat is empty, replace null with *** 
+DONE
+6.	Commit and push the program code to GitHub 
+DONE
+
+
 
  */
