@@ -55,8 +55,10 @@ DONE
 DONE
 12.	Modify the program code in question number 11 again to display the audience’s name for each line. Compile and run the program then observe the results, then commit
 DONE
-
-
+13.	What is the function of String.join()? 
+is to concatenate multiple strings using a specified delimiter
+14.	Commit and push to GitHub 
+DONE
 
 
 */
