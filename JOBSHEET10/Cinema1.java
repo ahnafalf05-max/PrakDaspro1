@@ -42,4 +42,12 @@ audience[3].length have the same value? Why?
 DONE
 6. Modify the program code in step 5 to display the length of each row in the array using a foreach loop. Compile, run, then commit
 DONE
+7. In your opinion, what are the advantages and disadvantages of foreach loop compared to for loop? 
+Use foreach loop when you just want to see or use items. Use for loop when you need to control the loop
+8.	What is the max row index for the audience array? 
+means it has 4 rows and 2 columns.
+9.	What is the max column index for the audience array? 
+It has 4 rows and 2 columns per row
+
+
 */
