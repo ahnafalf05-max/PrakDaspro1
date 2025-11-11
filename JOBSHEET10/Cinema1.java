@@ -13,8 +13,8 @@ public class Cinema1 {
         audience [3][1] = "Hana";
 
         System.out.println("Audiences in the row 3:");
-        for (int i = 0; i < audience[2].length; i++) {
-            System.out.println("audience[2][i]");
+        for (String i : audience [2]) {
+            System.out.println(i);
 
             
         }
@@ -51,6 +51,7 @@ It has 4 rows and 2 columns per row
 10.	Add program code to display the audience’s name on the 3rd line using a for loop. 
 Compile, run, then commit.
 DONE 
-
+11.	Modify the code in question number 10 to repeat using a foreach loop. Compile, run, then commit
+DONE
 
 */
