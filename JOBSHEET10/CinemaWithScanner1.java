@@ -19,30 +19,35 @@ public class CinemaWithScanner1 {
 
             switch (choice) {
                 case 1:
-                    
+                     
     System.out.print("Enter name: ");
     String name = sc.nextLine();
 
-    System.out.print("Enter row number (1-4): ");
-    int row = sc.nextInt();
+    int row, column;
 
-    System.out.print("Enter column number (1-2): ");
-    int column = sc.nextInt();
-    sc.nextLine(); // Clear buffer
+    while (true) {
+        System.out.print("Enter row number (1 – 4): ");
+        row = sc.nextInt();
 
-    
-    if (row >= 1 && row <= 4 && column >= 1 && column <= 2) {
+        System.out.print("Enter column number (1–2): ");
+        column = sc.nextInt();
+        sc.nextLine(); 
+
         
-        if (audience[row - 1][column - 1] == null) {
-            audience[row - 1][column - 1] = name;
-            System.out.println("Audience added successfully.");
+        if (row < 1 || row > 4 || column < 1 || column > 2) {
+            System.out.println(" Invalid seat position. Please enter a valid row (1–4) and column (1–2).");
+        } else if (audience[row - 1][column - 1] != null) {
+            System.out.println(" Seat already occupied by " + audience[row - 1][column - 1] + ". Please choose another seat.");
         } else {
-            System.out.println("Seat already taken. Please choose another seat.");
+            
+            audience[row - 1][column - 1] = name;
+            System.out.println(" Audience added successfully.");
+            break;
         }
-    } else {
-        System.out.println("Invalid seat position. Row must be 1–4 and column must be 1–2.");
     }
     break;
+                    
+    
 
                 case 2:
                     System.out.println("\n=== AUDIENCE LIST ===");
@@ -78,6 +83,7 @@ Not necessarily. In my program, the array elements are not filled sequentially f
 DONE
 3. Modify the program code to handle if the seat row/column number is not available 
 DONE
-
+4. In menu 1, modify the program code to give a warning if the selected seat is already occupied by other audiences, then display a command to enter rows and columns again 
+DONE
 
  */
