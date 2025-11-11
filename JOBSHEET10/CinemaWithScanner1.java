@@ -36,3 +36,9 @@ public class CinemaWithScanner1 {
         
         }
     }
+
+/* QUESTIONS
+ 1. Do array elements have to be filled in sequentially starting from the 0th index? Please 
+explain!
+
+ */

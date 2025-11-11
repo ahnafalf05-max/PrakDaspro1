@@ -20,3 +20,13 @@ System.out.printf("%s\t %s\n", audience[3][0], audience[3][1]);
 }
     
 }
+/* QUESTIONS
+1. Do array elements have to be filled in sequentially starting from the 0th index? Please 
+explain!
+No, they don’t have to be
+2. Why is there a null in the list of audience names?
+It doesn’t fill the array with actual names.
+3. Complete the audience list in step 4 so that it looks like the following program code
+DONE
+
+ */
