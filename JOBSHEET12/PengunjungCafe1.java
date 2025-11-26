@@ -24,11 +24,12 @@ fitur Java yang memungkinkan sebuah method menerima jumlah argumen yang fleksibe
 sudah termodifikasi 
 3. Bisakah menggunakan dua tipe data varaargs dalam satu fungsi? Jelaskan jawaban 
 Anda berdasarkan aturan varargs di Java, dan berikan contohnya! 
+Tidak bisa. Dalam Java, hanya satu parameter varargs (...) yang diizinkan dalam satu method, dan harus berada di posisi terakhir dalam daftar parameter.
 4. Jelaskan apa yang terjadi jika fungsi daftarPengunjung dipanggil tanpa argumen. 
 Apakah program akan error saat kompilasi, error saat dijalankan, atau tetap berjalan? 
 Jika tetap berjalan, bagaimana output yang dihasilkan? 
-
-
+Jika fungsi daftarPengunjung dipanggil tanpa argumen, program tidak akan error baik saat kompilasi maupun saat dijalankan
+Output yang muncul tetap menampilkan teks pembuka " Daftar nama pengujung: ", tetapi tidak ada daftar nama di bawahnya
 
 
 
