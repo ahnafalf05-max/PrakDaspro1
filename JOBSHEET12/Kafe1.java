@@ -1,18 +1,27 @@
 package JOBSHEET12;
+
 public class Kafe1 { 
-    public static void Menu() { 
-        
-        
-        System.out.println("==== MENU RESTO KAFE ===="); 
-        System.out.println("1. Kopi Hitam - Rp 15,000"); 
-        System.out.println("2. Cappuccino - Rp 20,000"); 
-        System.out.println("3. Latte - Rp 22,000"); 
-        System.out.println("4. Teh Tarik - Rp 12,000"); 
-        System.out.println("5. Roti Bakar - Rp 10,000"); 
-        System.out.println("6. Mie Goreng - Rp 18,000"); 
-        System.out.println("Silakan pilih menu yang Anda inginkan."); } 
+     public static void Menu(String namaPelanggan, boolean isMember) {
+    System.out.println("Selamat datang, " + namaPelanggan + "!");
+
+    if (isMember) {
+        System.out.println("Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!");
+    }
+
+    System.out.println("===== MENU RESTO KAFE =====");
+    System.out.println("1. Kopi Hitam - Rp 22,000");
+    System.out.println("2. Cappuccino - Rp 26,000");
+    System.out.println("3. Latte - Rp 28,000");
+    System.out.println("4. Teh Tarik - Rp 18,000");
+    System.out.println("5. Nasi Goreng - Rp 30,000");
+    System.out.println("6. Mie Goreng - Rp 25,000");
+    System.out.println("Silakan pilih menu yang Anda inginkan.");
+}
         public static void main(String[] args) { 
-            Menu(); }
+            Menu("Andi", true); 
+        }
+
+        
 }
 /*
 PERCOBAAN 1
@@ -30,6 +39,34 @@ Keuntungan memakai fungsi Menu() adalah kode lebih rapi, mudah dipanggil ulang, 
 4. Uraikan secara singkat alur eksekusi program ketika fungsi Menu() dipanggil dari main 
 (mulai dari program dijalankan sampai daftar menu tampil di layar). 
 Program mulai dari main(), lalu memanggil Menu(). Eksekusi masuk ke fungsi Menu(), semua perintah cetak dijalankan, daftar menu tampil di layar, kemudian kembali ke main() dan program selesai.
-
-
+PERCOBAAN 2
+1. Apakah kegunaan parameter di dalam fungsi? 
+ Parameter digunakan untuk mengirim data ke dalam fungsi agar fungsi bisa bekerja secara fleksibel sesuai input yang diberikan
+2. Jelaskan mengapa pada percobaan ini fungsi Menu() menggunakan parameter 
+namaPelanggan dan isMember? 
+namaPelanggan = untuk menampilkan sapaan personal seperti
+isMember = untuk menentukan apakah pelanggan mendapat diskon atau tidak.
+fungsi bisa menyesuaikan output berdasarkan siapa yang memanggil dan status keanggotaannya
+3. Apakah parameter sama dengan variabel? Jelaskan
+Parameter adalah variabel khusus yang didefinisikan di bagian deklarasi fungsi.
+Saat fungsi dipanggil, parameter menerima nilai dari luar
+Jadi, parameter adalah variabel input untuk fungsi
+4. Jelaskan bagaimana cara kerja parameter isMember pada fungsi Menu(). Apa 
+perbedaan output ketika isMember bernilai true dan ketika false? 
+jika true = program menampilkan pesan diskon 10%
+jika false = pesan diskon tidak ditampilkan
+5. Apa yang akan terjadi jika memanggil fungsi Menu() tanpa menyertakan parameter 
+namaPelanggan dan isMember?
+akan terjadi error karena fungsi Menu()membutuhkan 2 parameter (string dan boolean) 
+6. Modifikasi kode di atas dengan menambahkan parameter baru kodePromo (String). 
+Jika kodePromo adalah "DISKON50", tampilkan berikan diskon 50%. Jika kodePromo 
+adalah "DISKON30", tampilkan berikan diskon 30%. Jika tidak ada kode promo yang 
+berlaku, tampilkan kode invalid. 
+7. Berdasarkan fungsi Menu() di atas, jika nama pelanggan adalah "Budi", pelanggan 
+tersebut member, dan menggunakan kode promo "DISKON30", tuliskan satu baris 
+perintah pemanggilan fungsi menu yang benar. 
+8. Menurut Anda, apakah penggunaan parameter namaPelanggan dan isMember 
+pada fungsi Menu() membuat program lebih mudah dibaca dan dikembangkan 
+dibandingkan jika nilai-nilai tersebut ditulis langsung di dalam fungsi tanpa parameter? 
+Jelaskan alasan Anda.
 */
