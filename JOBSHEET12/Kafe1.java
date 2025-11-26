@@ -24,7 +24,10 @@ public class Kafe1 {
     System.out.println("5. Nasi Goreng - Rp 30,000");
     System.out.println("6. Mie Goreng - Rp 25,000");
     System.out.println("Silakan pilih menu yang Anda inginkan.");
-     }
+    Menu("Budi", true, "DISKON30");
+
+}
+
     }
 /*
 PERCOBAAN 1
@@ -69,8 +72,13 @@ sudah termodifikasi
 7. Berdasarkan fungsi Menu() di atas, jika nama pelanggan adalah "Budi", pelanggan 
 tersebut member, dan menggunakan kode promo "DISKON30", tuliskan satu baris 
 perintah pemanggilan fungsi menu yang benar. 
+sudah tertulis
 8. Menurut Anda, apakah penggunaan parameter namaPelanggan dan isMember 
 pada fungsi Menu() membuat program lebih mudah dibaca dan dikembangkan 
 dibandingkan jika nilai-nilai tersebut ditulis langsung di dalam fungsi tanpa parameter? 
 Jelaskan alasan Anda.
+Ya, penggunaan parameter membuat program lebih fleksibel, mudah dibaca, dan mudah dikembangkan.
+karena :
+1. 	Nilai bisa dikirim dari luar fungsi, tidak perlu ditulis ulang di dalam fungsi.
+2. 	Fungsi bisa digunakan untuk banyak pelanggan dengan data berbeda.
 */
