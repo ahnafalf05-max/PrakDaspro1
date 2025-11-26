@@ -1,11 +1,19 @@
 package JOBSHEET12;
 
 public class Kafe1 { 
-     public static void Menu(String namaPelanggan, boolean isMember) {
+     public static void Menu(String namaPelanggan, boolean isMember, String kodePromo) {
     System.out.println("Selamat datang, " + namaPelanggan + "!");
 
     if (isMember) {
         System.out.println("Anda adalah member, dapatkan diskon 10% untuk setiap pembelian!");
+    }
+
+    if (kodePromo.equals("DISKON50")) {
+        System.out.println("Kode promo valid: Anda mendapat diskon 50%!");
+    } else if (kodePromo.equals("DISKON30")) {
+        System.out.println("Kode promo valid: Anda mendapat diskon 30%!");
+    } else {
+        System.out.println("Kode promo tidak valid.");
     }
 
     System.out.println("===== MENU RESTO KAFE =====");
@@ -16,13 +24,8 @@ public class Kafe1 {
     System.out.println("5. Nasi Goreng - Rp 30,000");
     System.out.println("6. Mie Goreng - Rp 25,000");
     System.out.println("Silakan pilih menu yang Anda inginkan.");
-}
-        public static void main(String[] args) { 
-            Menu("Andi", true); 
-        }
-
-        
-}
+     }
+    }
 /*
 PERCOBAAN 1
 1. Apakah fungsi tanpa parameter selalu harus bertipe void?
@@ -62,6 +65,7 @@ akan terjadi error karena fungsi Menu()membutuhkan 2 parameter (string dan boole
 Jika kodePromo adalah "DISKON50", tampilkan berikan diskon 50%. Jika kodePromo 
 adalah "DISKON30", tampilkan berikan diskon 30%. Jika tidak ada kode promo yang 
 berlaku, tampilkan kode invalid. 
+sudah termodifikasi
 7. Berdasarkan fungsi Menu() di atas, jika nama pelanggan adalah "Budi", pelanggan 
 tersebut member, dan menggunakan kode promo "DISKON30", tuliskan satu baris 
 perintah pemanggilan fungsi menu yang benar. 
