@@ -40,7 +40,7 @@ public class HitungTotalHarga1 {
 
         System.out.print("Berapa jenis menu yang ingin Anda pesan? ");
         int jumlahJenisMenu = sc.nextInt();
-        sc.nextLine(); // Buang newline agar input kodePromo tidak error
+        sc.nextLine(); 
 
         for (int i = 1; i <= jumlahJenisMenu; i++) {
             System.out.print("\nPesanan ke-" + i + ": Masukkan nomor menu (1–6): ");
@@ -48,7 +48,7 @@ public class HitungTotalHarga1 {
 
             System.out.print("Masukkan jumlah item: ");
             int banyakItem = sc.nextInt();
-            sc.nextLine(); // Buang newline
+            sc.nextLine(); 
 
             System.out.print("Masukkan kode promo (DISKON50 / DISKON30 / -): ");
             String kodePromo = sc.nextLine();
